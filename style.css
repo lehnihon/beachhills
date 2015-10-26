@@ -35,12 +35,23 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   color: #4e67cf;
 }
 /* line 37, style.scss */
+#page h1.small {
+  font-size: 26px;
+  color: #4e67cf;
+  font-weight: bold;
+  margin-top: 60px;
+}
+/* line 44, style.scss */
 #page h2 {
-  font-size: 24px;
+  font-size: 26px;
   color: #4e67cf;
   font-weight: bold;
 }
-/* line 43, style.scss */
+/* line 50, style.scss */
+#page h4 {
+  font-size: 20px;
+}
+/* line 54, style.scss */
 #page h5 {
   font-size: 17px;
   font-weight: normal;
@@ -247,13 +258,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   color: #bfbfbf;
 }
 
-/* line 55, style.scss */
+/* line 66, style.scss */
 .effect-gray:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-/* line 60, style.scss */
+/* line 71, style.scss */
 .effect-bright:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);

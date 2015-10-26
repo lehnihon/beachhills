@@ -44,7 +44,7 @@
                         </div>
 					</div>
 					<ul id="menu-header" class="clearfix">
-						<li><a href="#">O Hotel</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."hotel/"; ?>">O Hotel</a></li>
 						<li><a href="#">Acomodações</a></li>
 						<li><a href="#">Galeria de Fotos</a></li>
 						<li><a href="#">Localização</a></li>

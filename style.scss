@@ -34,10 +34,21 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		color:#4e67cf;
 	}
 
-	h2{
-		font-size: 24px;
+	h1.small{
+		font-size: 26px;
 		color:#4e67cf;
 		font-weight: bold;
+		margin-top: 60px;
+	}
+
+	h2{
+		font-size: 26px;
+		color:#4e67cf;
+		font-weight: bold;
+	}
+
+	h4{
+		font-size: 20px;
 	}
 
 	h5{

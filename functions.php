@@ -135,6 +135,50 @@ if (!function_exists('loop_columns')) {
 	}
 }
 
+function register_post_type_fotos(){
+	$singular = 'Foto';
+	$plural = 'Fotos';
+	$labels = array(
+		'name' => $plural,
+		'singular_name' => $singular,
+		'add_new_item' => 'Adicionar nova '.$singular,
+		);
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+        'supports' => array('title', 'editor','thumbnail'),
+        'menu_position' => 5
+		);
+
+	register_post_type('fotos',$args);
+}
+add_action(	'init','register_post_type_fotos');
+
+function change_post_menu_label() {
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'Acomodações';
+    $submenu['edit.php'][5][0] = 'Acomodações';
+    $submenu['edit.php'][10][0] = 'Adicionar Acomodações';
+    echo '';
+}
+function change_post_object_label() {
+        global $wp_post_types;
+        $labels = &$wp_post_types['post']->labels;
+        $labels->name = 'Acomodações';
+        $labels->singular_name = 'Acomodação';
+        $labels->add_new = 'Adicionar Acomodação';
+        $labels->add_new_item = 'Adicionar Acomodação';
+        $labels->edit_item = 'Editar Acomodação';
+        $labels->new_item = 'Acomodação';
+        $labels->view_item = 'Ver Acomodação';
+        $labels->search_items = 'Procurar Acomodação';
+        $labels->not_found = 'Acomodação não encontrada';
+        $labels->not_found_in_trash = 'Sem Acomodações na lixeira';
+}
+add_action( 'init', 'change_post_object_label' );
+add_action( 'admin_menu', 'change_post_menu_label' );
+
 /**
  * Implement the Custom Header feature.
  */

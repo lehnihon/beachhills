@@ -29,30 +29,29 @@ get_header(); ?>
 				</div>
 			</div><br>
 			<div class="row">
-
 				<div class="col-md-4">
 					<?php 
-					$args = array('posts_per_page' => 1,'post_type' => 'fotos', 'localidade' => 'tatuape', 'orderby' => 'rand');
-					$query = new WP_Query( $args ); 
-					?>	
-
-					<?php if ( $query->have_posts() ) : ?>
-						<?php /* Start the Loop */ ?>
-						<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-								<header class="entry-header">
-									<?php if ( has_post_thumbnail() && !is_search() ) { ?>
-										<a href="<?php echo esc_url( home_url( '/' ))."fotos-tatuape/"; ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>">
-											<?php the_post_thumbnail('home-thumb-paisagem', array(
-												'class' => "img-responsive e-cinza",
-											)); ?>
-										</a>
-									<?php } ?>
-
-								</header><!-- .entry-header -->
-							</article><!-- #post-## -->
-						<?php endwhile; ?>
-					<?php endif; ?>
+					$post = get_page_by_path( 'standard', OBJECT, 'post');
+					setup_postdata( $post );
+					include(locate_template('template-parts/content-acomodacoes.php'));
+					wp_reset_query();
+					?>
+				</div>
+				<div class="col-md-4">
+					<?php 
+					$post = get_page_by_path( 'luxo', OBJECT, 'post');
+					setup_postdata( $post );
+					include(locate_template('template-parts/content-acomodacoes.php'));
+					wp_reset_query();
+					?>
+				</div>
+				<div class="col-md-4">
+					<?php 
+					$post = get_page_by_path( 'suite-master', OBJECT, 'post');
+					setup_postdata( $post );
+					include(locate_template('template-parts/content-acomodacoes.php'));
+					wp_reset_query();
+					?>
 				</div>
 			</div>
 		</div><!-- .container -->
