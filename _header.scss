@@ -1,6 +1,61 @@
 #header{
     .container{   
-        nav{ 
+        nav#site-navigation{
+        	margin: 20px 0;
+
+         	.logo-header{
+         	}
+         	div.wrap-header{
+				div#search-fields{
+					float:right;
+					div.colField{
+						float: left;
+						text-align:left;
+						margin: 0 2px;
+
+						input[type="text"]{
+							width: 100px;
+							border:1px solid #B8B8B8;
+						    border-radius: 5px;
+						    -moz-border-radius: 5px;
+						    -webkit-border-radius: 5px;
+						    padding:5px;
+						}
+						input[type="submit"]{
+							border:1px solid #B8B8B8;
+						    border-radius: 5px;
+						    -moz-border-radius: 5px;
+						    -webkit-border-radius: 5px;
+						    padding:5px;
+						    background-color: #4e67cf;
+						    color:white;
+						}
+					}
+				}
+
+         		ul#menu-header{
+         			float:right;
+					list-style-type: none;
+					margin:0;
+					padding:0;
+					margin-top: 10px;
+
+         			li{
+         				float:left;
+         				margin: 0 10px;
+         				a{
+	         				color:#4e67cf;
+	         				font-size: 16px;
+	         				font-weight: bold;
+         				}
+
+						a:hover{
+							color:#98a3cf;
+						}
+         			}
+         		}
+         	}
+
         }
     }    
 }

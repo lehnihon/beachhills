@@ -14,46 +14,72 @@
 get_header(); ?>
 
 <div id="content">
-	<div class="container">
-		<div class="row">
-			<main class="col-md-8">
+	<section id="banner">
+		<div class="container">
+			<?php putRevSlider( "banner-index" ) ?>
+			<div class="nav-buttons"></div>
+		</div>
+	</section>
+	<section id="produtos">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Acomodações</h2>
+					<h5>São 180 apartamentos nas categorias Standard, Luxo e Suíte Master</h5>
+				</div>
+			</div><br>
+			<div class="row">
 
-			<?php if ( have_posts() ) : ?>
+				<div class="col-md-4">
+					<?php 
+					$args = array('posts_per_page' => 1,'post_type' => 'fotos', 'localidade' => 'tatuape', 'orderby' => 'rand');
+					$query = new WP_Query( $args ); 
+					?>	
 
-				<?php if ( is_home() && ! is_front_page() ) : ?>
-					<header>
-						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					</header>
-				<?php endif; ?>
+					<?php if ( $query->have_posts() ) : ?>
+						<?php /* Start the Loop */ ?>
+						<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+								<header class="entry-header">
+									<?php if ( has_post_thumbnail() && !is_search() ) { ?>
+										<a href="<?php echo esc_url( home_url( '/' ))."fotos-tatuape/"; ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>">
+											<?php the_post_thumbnail('home-thumb-paisagem', array(
+												'class' => "img-responsive e-cinza",
+											)); ?>
+										</a>
+									<?php } ?>
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+								</header><!-- .entry-header -->
+							</article><!-- #post-## -->
+						<?php endwhile; ?>
+					<?php endif; ?>
+				</div>
+			</div>
+		</div><!-- .container -->
+	</section>
+	<section id="info">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 info-left">
+					<div class="info-content">
+						<img class="img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo_mid.png"?>" />
+					</div>
+				</div>
+				<div class="col-md-6 info-right">
+					<div class="info-content">
+						<h1>HOTEL<br> BEACH HILLS</h1><br>
+						<h5>O Hotel Beach Hills fica localizado na cidade de Porto Seguro, na Bahia</h5><br>
+						<p>O Beach Hills conta com 180 apartamentos e fica em frente á praia da Taperapuan, em Porto Seguro.</p>
+						<p>Próximo às principais baracas das praias mais badaladas da cidade, você com certeza terá uma ótima hospedagem.</p>
+						<p>Pela manhã, um saboroso café da manhã lhe recepciona com alimentos frescos e variados, proporcionando um começo de dia ainda melhor.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> 
+	
+	<?php get_template_part( 'template-parts/redes-bot'); ?>
 
-					<?php
-
-						/*
-						 * Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'template-parts/content', get_post_format() );
-					?>
-
-				<?php endwhile; ?>
-
-				<?php the_posts_navigation(); ?>
-
-			<?php else : ?>
-
-				<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-			<?php endif; ?>
-			</main><!-- #main -->
-			<aside class="col-md-4">
-				<?php get_sidebar(); ?>
-			</aside>
-		</div><!-- .row -->
-	</div><!-- .container -->
 </div><!-- #content -->
 
 <?php get_footer(); ?>

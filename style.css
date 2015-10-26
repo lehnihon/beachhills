@@ -1,5 +1,5 @@
 /*
-Theme Name: wooecomerce-bootstrap
+Theme Name: BeachHills
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
@@ -19,3 +19,245 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
+/* line 23, style.scss */
+#page {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #606060;
+  text-align: center;
+}
+/* line 28, style.scss */
+#page a:hover {
+  text-decoration: none;
+}
+/* line 32, style.scss */
+#page h1 {
+  font-size: 36px;
+  color: #4e67cf;
+}
+/* line 37, style.scss */
+#page h2 {
+  font-size: 24px;
+  color: #4e67cf;
+  font-weight: bold;
+}
+/* line 43, style.scss */
+#page h5 {
+  font-size: 17px;
+  font-weight: normal;
+}
+/* line 3, _header.scss */
+#page #header .container nav#site-navigation {
+  margin: 20px 0;
+}
+/* line 9, _header.scss */
+#page #header .container nav#site-navigation div.wrap-header div#search-fields {
+  float: right;
+}
+/* line 11, _header.scss */
+#page #header .container nav#site-navigation div.wrap-header div#search-fields div.colField {
+  float: left;
+  text-align: left;
+  margin: 0 2px;
+}
+/* line 16, _header.scss */
+#page #header .container nav#site-navigation div.wrap-header div#search-fields div.colField input[type="text"] {
+  width: 100px;
+  border: 1px solid #B8B8B8;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 5px;
+}
+/* line 24, _header.scss */
+#page #header .container nav#site-navigation div.wrap-header div#search-fields div.colField input[type="submit"] {
+  border: 1px solid #B8B8B8;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 5px;
+  background-color: #4e67cf;
+  color: white;
+}
+/* line 36, _header.scss */
+#page #header .container nav#site-navigation div.wrap-header ul#menu-header {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+/* line 43, _header.scss */
+#page #header .container nav#site-navigation div.wrap-header ul#menu-header li {
+  float: left;
+  margin: 0 10px;
+}
+/* line 46, _header.scss */
+#page #header .container nav#site-navigation div.wrap-header ul#menu-header li a {
+  color: #4e67cf;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 52, _header.scss */
+#page #header .container nav#site-navigation div.wrap-header ul#menu-header li a:hover {
+  color: #98a3cf;
+}
+/* line 2, _content.scss */
+#page div#content div.nav-buttons {
+  height: 60px;
+  width: 100%;
+  background-color: #4e67cf;
+}
+/* line 8, _content.scss */
+#page div#content section {
+  margin: 60px 0;
+}
+/* line 12, _content.scss */
+#page div#content section:first-child {
+  margin-top: 0;
+}
+/* line 16, _content.scss */
+#page div#content section#info {
+  background-image: url("images/background-sobre.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  padding: 100px 0;
+}
+/* line 25, _content.scss */
+#page div#content section#info div.container div.info-left {
+  background-color: #fff40e;
+}
+/* line 28, _content.scss */
+#page div#content section#info div.container div.info-left div.info-content {
+  padding: 122px 50px;
+}
+/* line 30, _content.scss */
+#page div#content section#info div.container div.info-left div.info-content img {
+  margin: 0 auto;
+}
+/* line 36, _content.scss */
+#page div#content section#info div.container div.info-right {
+  background-color: white;
+}
+/* line 39, _content.scss */
+#page div#content section#info div.container div.info-right div.info-content {
+  padding: 80px 30px;
+}
+/* line 48, _content.scss */
+#page div#content section#redes-bot .redes_sociais_bot {
+  margin-bottom: 5px;
+  height: 67px;
+  text-align: left;
+  list-style: none;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 310px;
+  padding: 0;
+}
+/* line 59, _content.scss */
+#page div#content section#redes-bot .redes_sociais_bot li:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */
+}
+/* line 64, _content.scss */
+#page div#content section#redes-bot .redes_sociais_bot a {
+  display: inline-block;
+  width: 67px;
+  height: 67px;
+}
+/* line 70, _content.scss */
+#page div#content section#redes-bot .redes_sociais_bot .youtube {
+  background-image: url("images/redes_bot.jpg");
+  background-position: left,center;
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 67px;
+  display: inline-block;
+}
+/* line 79, _content.scss */
+#page div#content section#redes-bot .redes_sociais_bot .instagram {
+  background-image: url("images/redes_bot.jpg");
+  background-position: -80px,center;
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 67px;
+  display: inline-block;
+}
+/* line 88, _content.scss */
+#page div#content section#redes-bot .redes_sociais_bot .twitter {
+  background-image: url("images/redes_bot.jpg");
+  background-position: -160px,center;
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 67px;
+  display: inline-block;
+}
+/* line 97, _content.scss */
+#page div#content section#redes-bot .redes_sociais_bot .facebook {
+  background-image: url("images/redes_bot.jpg");
+  background-position: right,center;
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 67px;
+  display: inline-block;
+}
+/* line 1, _footer.scss */
+#page #footer {
+  text-align: left;
+  color: #FFFFFF;
+}
+/* line 5, _footer.scss */
+#page #footer div.footer-content {
+  padding: 50px 0;
+  background-color: #4e67cf;
+}
+/* line 9, _footer.scss */
+#page #footer div.footer-content ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+/* line 13, _footer.scss */
+#page #footer div.footer-content ul a {
+  color: #FFFFFF;
+}
+/* line 16, _footer.scss */
+#page #footer div.footer-content ul a:hover {
+  color: #fff40e;
+}
+/* line 22, _footer.scss */
+#page #footer div.copyrino {
+  text-align: center;
+  color: #606060;
+  background-color: #ebebeb;
+  padding: 20px 0;
+}
+/* line 27, _footer.scss */
+#page #footer div.copyrino .col-md-10 {
+  padding: 12px;
+}
+/* line 29, _footer.scss */
+#page #footer div.copyrino .col-md-10 a {
+  color: #606060;
+}
+/* line 32, _footer.scss */
+#page #footer div.copyrino .col-md-10 a:hover {
+  color: #bfbfbf;
+}
+
+/* line 55, style.scss */
+.effect-gray:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/* line 60, style.scss */
+.effect-bright:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */
+}
+
+/*# sourceMappingURL=style.css.map */

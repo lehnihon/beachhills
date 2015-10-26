@@ -1,5 +1,5 @@
 /*
-Theme Name: henjinovo
+Theme Name: BeachHills
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
@@ -21,9 +21,29 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
  
 #page{
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color:#606060;
 	text-align:center;
+
+	a:hover{
+		text-decoration: none;
+	}
+
+	h1{
+		font-size: 36px;
+		color:#4e67cf;
+	}
+
+	h2{
+		font-size: 24px;
+		color:#4e67cf;
+		font-weight: bold;
+	}
+
+	h5{
+		font-size:17px;
+		font-weight: normal;
+	}
 
 	@import 'header';
 	@import 'content';
@@ -31,12 +51,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 
 }
-.e-cinza:hover{
+
+.effect-gray:hover{
 	-webkit-filter: grayscale(100%); 
 	filter: grayscale(100%);
 }
 
-.e-claro:hover{
+.effect-bright:hover{
     opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
