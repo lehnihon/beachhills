@@ -1,11 +1,14 @@
 <article class="acomodacoes">
 	<div class="image">
-		<?php the_post_thumbnail('home-thumb', array(
-			'class' => "img-responsive e-cinza",
-		)); ?>								
+		<a href="<?php the_permalink(); ?>">
+			<?php the_post_thumbnail('home-thumb', array(
+				'class' => "img-responsive effect-gray",
+			)); ?>	
+		</a>							
 	</div>
 	<div class="content">
 		<h4><?php the_title( ); ?></h4>	
-		<p><?php the_excerpt(); ?></p>						
+		<p><?php the_excerpt(); ?></p>
+		<a href="<?php the_permalink(); ?>">saiba mais</a>						
 	</div>		
 </article>

@@ -6,11 +6,43 @@ div#content{
     }
 
 	section{
-		margin: 60px 0;
+		margin-bottom: 60px;
 	}
 
-	section:first-child{
-		margin-top: 0;
+	section#produtos{
+		article.acomodacoes{
+			div.content{
+				padding:20px 10px;
+				background-color:#4e67cf;
+				color:white;
+
+				h4{
+					margin: 0;
+				}
+				a{
+					display: inline-block;
+					color: white;
+					margin: 5px 0;
+					border: 1px solid white;
+					padding:10px 50px;
+					background-color:#4e67cf;
+				}	
+				a:hover{
+					background-color:#a6b3e7;
+				}			
+			}
+		}
+		div.localizacao{
+			div.localizacao-left{
+				color:white;
+				background-color:#4e67cf;
+				padding:96px 30px;
+
+				h2{
+					color:white;
+				}
+			}
+		}
 	}
 
 	section#info{

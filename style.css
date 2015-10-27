@@ -56,6 +56,22 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   font-size: 17px;
   font-weight: normal;
 }
+/* line 59, style.scss */
+#page .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 5;
+}
+/* line 65, style.scss */
+#page .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 /* line 3, _header.scss */
 #page #header .container nav#site-navigation {
   margin: 20px 0;
@@ -120,13 +136,42 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 /* line 8, _content.scss */
 #page div#content section {
-  margin: 60px 0;
+  margin-bottom: 60px;
 }
-/* line 12, _content.scss */
-#page div#content section:first-child {
-  margin-top: 0;
+/* line 14, _content.scss */
+#page div#content section#produtos article.acomodacoes div.content {
+  padding: 20px 10px;
+  background-color: #4e67cf;
+  color: white;
 }
-/* line 16, _content.scss */
+/* line 19, _content.scss */
+#page div#content section#produtos article.acomodacoes div.content h4 {
+  margin: 0;
+}
+/* line 22, _content.scss */
+#page div#content section#produtos article.acomodacoes div.content a {
+  display: inline-block;
+  color: white;
+  margin: 5px 0;
+  border: 1px solid white;
+  padding: 10px 50px;
+  background-color: #4e67cf;
+}
+/* line 30, _content.scss */
+#page div#content section#produtos article.acomodacoes div.content a:hover {
+  background-color: #a6b3e7;
+}
+/* line 36, _content.scss */
+#page div#content section#produtos div.localizacao div.localizacao-left {
+  color: white;
+  background-color: #4e67cf;
+  padding: 96px 30px;
+}
+/* line 41, _content.scss */
+#page div#content section#produtos div.localizacao div.localizacao-left h2 {
+  color: white;
+}
+/* line 48, _content.scss */
 #page div#content section#info {
   background-image: url("images/background-sobre.jpg");
   background-repeat: no-repeat;
@@ -135,27 +180,27 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   width: 100%;
   padding: 100px 0;
 }
-/* line 25, _content.scss */
+/* line 57, _content.scss */
 #page div#content section#info div.container div.info-left {
   background-color: #fff40e;
 }
-/* line 28, _content.scss */
+/* line 60, _content.scss */
 #page div#content section#info div.container div.info-left div.info-content {
   padding: 122px 50px;
 }
-/* line 30, _content.scss */
+/* line 62, _content.scss */
 #page div#content section#info div.container div.info-left div.info-content img {
   margin: 0 auto;
 }
-/* line 36, _content.scss */
+/* line 68, _content.scss */
 #page div#content section#info div.container div.info-right {
   background-color: white;
 }
-/* line 39, _content.scss */
+/* line 71, _content.scss */
 #page div#content section#info div.container div.info-right div.info-content {
   padding: 80px 30px;
 }
-/* line 48, _content.scss */
+/* line 80, _content.scss */
 #page div#content section#redes-bot .redes_sociais_bot {
   margin-bottom: 5px;
   height: 67px;
@@ -166,19 +211,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   width: 310px;
   padding: 0;
 }
-/* line 59, _content.scss */
+/* line 91, _content.scss */
 #page div#content section#redes-bot .redes_sociais_bot li:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);
   /* For IE8 and earlier */
 }
-/* line 64, _content.scss */
+/* line 96, _content.scss */
 #page div#content section#redes-bot .redes_sociais_bot a {
   display: inline-block;
   width: 67px;
   height: 67px;
 }
-/* line 70, _content.scss */
+/* line 102, _content.scss */
 #page div#content section#redes-bot .redes_sociais_bot .youtube {
   background-image: url("images/redes_bot.jpg");
   background-position: left,center;
@@ -187,7 +232,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   height: 67px;
   display: inline-block;
 }
-/* line 79, _content.scss */
+/* line 111, _content.scss */
 #page div#content section#redes-bot .redes_sociais_bot .instagram {
   background-image: url("images/redes_bot.jpg");
   background-position: -80px,center;
@@ -196,7 +241,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   height: 67px;
   display: inline-block;
 }
-/* line 88, _content.scss */
+/* line 120, _content.scss */
 #page div#content section#redes-bot .redes_sociais_bot .twitter {
   background-image: url("images/redes_bot.jpg");
   background-position: -160px,center;
@@ -205,7 +250,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   height: 67px;
   display: inline-block;
 }
-/* line 97, _content.scss */
+/* line 129, _content.scss */
 #page div#content section#redes-bot .redes_sociais_bot .facebook {
   background-image: url("images/redes_bot.jpg");
   background-position: right,center;
@@ -258,13 +303,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   color: #bfbfbf;
 }
 
-/* line 66, style.scss */
+/* line 80, style.scss */
 .effect-gray:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-/* line 71, style.scss */
+/* line 85, style.scss */
 .effect-bright:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);

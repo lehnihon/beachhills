@@ -53,6 +53,28 @@ get_header(); ?>
 					wp_reset_query();
 					?>
 				</div>
+			</div><br><br>
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Localização</h2>
+					<h5>Confira onde o Hotel Beach Hills fica localizado em Porto Seguro, na Bahia.</h5>
+				</div>
+			</div><br><br>
+			<div class="row localizacao">
+				<div class="col-md-4 text-left localizacao-left">
+					<h2>Hotel Beach Hills</h2>
+					<p>
+						Avenida Beira Mar, 5.575<br>
+						Porto Seguro - Bahia<br><br>
+						<strong>Telefone</strong><br>
+						73 3162-7600<br>
+						<strong>Email</strong><br>
+						reservas@hotelbeachhills.com.br
+					</p>
+				</div>
+				<div class="col-md-8 videoWrapper localizacao-right" style="padding:0">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.4295720166865!2d-39.04584768549492!3d-16.40299544258652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x736945f5179b163%3A0x60d54befe6271f7!2sAv.+Beira+Mar%2C+5575%2C+Porto+Seguro+-+BA%2C+45810-000!5e0!3m2!1spt-BR!2sbr!4v1445969680772" width="600" height="400" frameborder="0" style="border:0; height:400px" allowfullscreen></iframe>
+				</div>
 			</div>
 		</div><!-- .container -->
 	</section>
