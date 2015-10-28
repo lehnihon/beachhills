@@ -16,8 +16,12 @@ get_header(); ?>
 <div id="content">
 	<section id="banner">
 		<div class="container">
-			<?php putRevSlider( "banner-index" ) ?>
-			<div class="nav-buttons"></div>
+			<div class="row">
+				<div class="col-md-12">			
+					<?php putRevSlider( "banner-index" ) ?>
+					<div class="nav-buttons"></div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section id="produtos">
@@ -73,7 +77,7 @@ get_header(); ?>
 					</p>
 				</div>
 				<div class="col-md-8 videoWrapper localizacao-right" style="padding:0">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.4295720166865!2d-39.04584768549492!3d-16.40299544258652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x736945f5179b163%3A0x60d54befe6271f7!2sAv.+Beira+Mar%2C+5575%2C+Porto+Seguro+-+BA%2C+45810-000!5e0!3m2!1spt-BR!2sbr!4v1445969680772" width="600" height="400" frameborder="0" style="border:0; height:400px" allowfullscreen></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.4295720166865!2d-39.04584768549492!3d-16.40299544258652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x736945f5179b163%3A0x60d54befe6271f7!2sAv.+Beira+Mar%2C+5575%2C+Porto+Seguro+-+BA%2C+45810-000!5e0!3m2!1spt-BR!2sbr!4v1445969680772" width="600" height="400" frameborder="0" style="border:0; height:390px" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div><!-- .container -->

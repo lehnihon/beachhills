@@ -25,8 +25,8 @@
 	<header id="header">
 		<div class="container">
 			<nav id="site-navigation" class="row" role="navigation">
-				<span class="logo-header col-md-4"><a href="<?php echo esc_url( home_url( '/' )); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo_header.png"; ?>"/></a></span>
-					<div class="wrap-header col-md-7 col-md-offset-1">
+				<div class="logo-header col-md-4"><a href="<?php echo esc_url( home_url( '/' )); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo_header.png"; ?>"/></a></div>
+				<div class="wrap-header col-md-7 col-md-offset-1">
 
 					<div id="search-fields" class="busca clearfix">
                         <input type="hidden" id="idDestino" value="">

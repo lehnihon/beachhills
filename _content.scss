@@ -6,8 +6,13 @@ div#content{
     }
 
 	section{
-		margin-bottom: 60px;
+		margin: 70px 0;
 	}
+
+	section:first-child{
+		margin-top: 25px;
+	}
+
 
 	section#produtos{
 		article.acomodacoes{
@@ -58,7 +63,7 @@ div#content{
 	    		background-color:#fff40e;
 
 	    		div.info-content{
-	    			padding:122px 50px;
+	    			padding:117px 50px;
 	    			img{
 	    				margin: 0 auto;
 	    			}
