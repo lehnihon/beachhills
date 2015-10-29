@@ -16,10 +16,7 @@
 					<div class="col-md-4">
 						<p>
 							<strong>Sobre o Hotel Beach Hills</strong><br><br>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-								nisi ut aliquip ex ea commodo consequat. 
+							O Hotel Beach Hills fica localizado na bela praia de Taperapuã, a 6 km do centro histórico de Porto Seguro, o hotel oferece uma grande piscina rodeada por jardins, um restaurante regional, WIFI e quartos com varanda.
 						</p>
 					</div>
 					<div class="col-md-2 col-md-offset-1">
