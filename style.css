@@ -41,7 +41,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   font-size: 26px;
   color: #4e67cf;
   font-weight: bold;
-  margin-top: 60px;
 }
 /* line 46, style.scss */
 #page h2 {
@@ -278,6 +277,18 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   width: 67px;
   height: 67px;
   display: inline-block;
+}
+/* line 145, _content.scss */
+#page div#content section#localizacao-pag div.localizacao-barra {
+  background-color: #4e67cf;
+  color: white;
+  padding: 20px;
+}
+/* line 153, _content.scss */
+#page div#content section#contato-pag .info-right {
+  background-color: #4e67cf;
+  color: white;
+  padding: 20px 50px;
 }
 /* line 1, _footer.scss */
 #page #footer {
