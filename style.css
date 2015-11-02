@@ -335,12 +335,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 
 /* line 84, style.scss */
+#ui-datepicker-div {
+  z-index: 100 !important;
+}
+
+/* line 88, style.scss */
 .effect-gray:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-/* line 89, style.scss */
+/* line 93, style.scss */
 .effect-bright:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);

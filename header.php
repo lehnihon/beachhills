@@ -32,11 +32,11 @@
                         <input type="hidden" id="idDestino" value="">
                         <div class="colField">
                             Entrada<br>
-                            <input type="text" class="txt date hasDatepicker" id="idDtEntrada" placeholder="dd/mm/aaaa">
+                            <input type="text" id="idDtEntrada" placeholder="dd/mm/aaaa">
                         </div>
                         <div class="colField">
                             Saída<br>
-                            <input type="text" class="txt date hasDatepicker" id="idDtSaida" placeholder="dd/mm/aaaa">
+                            <input type="text" id="idDtSaida" placeholder="dd/mm/aaaa">
                         </div>
                         <div class="colField">
                             <br>
@@ -45,10 +45,10 @@
 					</div>
 					<ul id="menu-header" class="clearfix">
 						<li><a href="<?php echo esc_url( home_url( '/' ))."hotel/"; ?>">O Hotel</a></li>
-						<li><a href="#">Acomodações</a></li>
-						<li><a href="#">Galeria de Fotos</a></li>
-						<li><a href="#">Localização</a></li>
-						<li><a href="#">Contato</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."acomodacoes/"; ?>">Acomodações</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."fotos/"; ?>">Galeria de Fotos</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."localizacao/"; ?>">Localização</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."contato/"; ?>">Contato</a></li>
 					</ul>
 
 				</div>

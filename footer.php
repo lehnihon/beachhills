@@ -22,17 +22,32 @@
 					<div class="col-md-2 col-md-offset-1">
 						<strong>Hotel Beach Hills</strong><br><br>
 						<ul>
-							<li><a href="#">O Hotel Beach Hills</a></li>
-							<li><a href="#">Localização</a></li>
-							<li><a href="#">Contato</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ))."hotel/"; ?>">O Hotel Beach Hills</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ))."localizacao/"; ?>">Localização</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ))."contato/"; ?>">Contato</a></li>
 						</ul>
 					</div>
 					<div class="col-md-2">
 						<strong>Acomodações</strong><br><br>
 						<ul>
-							<li><a href="#">Standard</a></li>
-							<li><a href="#">Luxo</a></li>
-							<li><a href="#">Suíte Master</a></li>
+							<?php 
+							$post = get_page_by_path( 'standard', OBJECT, 'post');
+							setup_postdata( $post );
+							?>
+							<li><a href="<?php the_permalink(); ?>">Standard</a></li>
+							<?php
+							wp_reset_query(); 
+							$post = get_page_by_path( 'luxo', OBJECT, 'post');
+							setup_postdata( $post );
+							?>
+							<li><a href="<?php the_permalink(); ?>">Luxo</a></li>
+							<?php
+							wp_reset_query(); 
+							$post = get_page_by_path( 'suite-master', OBJECT, 'post');
+							setup_postdata( $post );
+							?>
+							<li><a href="<?php the_permalink(); ?>">Suíte Master</a></li>
+							<?php wp_reset_query(); ?>
 						</ul>
 					</div>
 					<div class="col-md-3">
