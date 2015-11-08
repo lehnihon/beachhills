@@ -36,7 +36,7 @@ get_header(); ?>
 			?>
 			<div class="row">
 				<?php if($slug != 'standard'):?>
-				<div class="col-md-6">
+				<div class="col-md-4 col-md-offset-2">
 					<?php 
 					$post = get_page_by_path( 'standard', OBJECT, 'post');
 					setup_postdata( $post );
@@ -46,7 +46,7 @@ get_header(); ?>
 				</div>
 				<?php endif; ?>
 				<?php if($slug != 'luxo'):?>
-				<div class="col-md-6">
+				<div class="col-md-4 <?php if($slug == 'standard'):?> col-md-offset-2 <?php endif; ?>">
 					<?php 
 					$post = get_page_by_path( 'luxo', OBJECT, 'post');
 					setup_postdata( $post );
@@ -56,7 +56,7 @@ get_header(); ?>
 				</div>
 				<?php endif; ?>
 				<?php if($slug != 'suite-master'):?>
-				<div class="col-md-6">
+				<div class="col-md-4">
 					<?php 
 					$post = get_page_by_path( 'suite-master', OBJECT, 'post');
 					setup_postdata( $post );
