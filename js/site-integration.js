@@ -1,8 +1,8 @@
 ( function( $ ) {
 	$(function() {
-		$('#idDtEntrada').datepicker({ minDate: 0 });
+		$('#idDtEntrada').datepicker({ minDate: 0, dateFormat: 'dd/mm/yy' });
 		$('#idDtEntrada').mask("99/99/9999");
-		$('#idDtSaida').datepicker({ minDate: 0 });
+		$('#idDtSaida').datepicker({ minDate: 0, dateFormat: 'dd/mm/yy' });
 		$('#idDtSaida').mask("99/99/9999");
 		$('#btnBuscar').on('click',function(){
 			var dtEntrada = $('#idDtEntrada').val();
