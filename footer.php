@@ -51,7 +51,8 @@
 						</ul>
 					</div>
 					<div class="col-md-3">
-						<strong>Receba nossas novidades</strong>
+						<strong>Receba nossas novidades</strong><br><br>
+						<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 5 ); } ?>
 					</div>
 				</div><!-- .row -->
 			</div><!-- .container -->			

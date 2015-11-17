@@ -75,6 +75,42 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   width: 100%;
   height: 100%;
 }
+/* line 77, style.scss */
+#page .btn-receba {
+  background-color: #fff40e;
+  color: #4e67cf;
+  padding: 5px 25px;
+}
+/* line 82, style.scss */
+#page .btn-receba:hover {
+  background-color: #fff86e;
+}
+/* line 85, style.scss */
+#page .input-receba-wrap {
+  margin-bottom: 5px;
+  color: #606060;
+}
+/* line 89, style.scss */
+#page .input-receba {
+  border: 0;
+  padding: 5px;
+}
+/* line 94, style.scss */
+#page .input-contato {
+  border: 0;
+  padding: 5px;
+  background-color: #f4f4f4;
+}
+/* line 100, style.scss */
+#page .btn-contato {
+  background-color: #4e67cf;
+  padding: 5px 25px;
+  color: white;
+}
+/* line 106, style.scss */
+#page .btn-contato:hover {
+  background-color: #8394dd;
+}
 /* line 1, _header.scss */
 #page #header {
   border-top: 5px solid #4e67cf;
@@ -334,18 +370,18 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   color: #bfbfbf;
 }
 
-/* line 84, style.scss */
+/* line 117, style.scss */
 #ui-datepicker-div {
   z-index: 100 !important;
 }
 
-/* line 88, style.scss */
+/* line 121, style.scss */
 .effect-gray:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-/* line 93, style.scss */
+/* line 126, style.scss */
 .effect-bright:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);

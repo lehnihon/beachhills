@@ -11,9 +11,10 @@ get_header(); ?>
 				</div>
 			</div><br>
 			<div class="row">
-				<div class="col-md-6 info-left">
+				<div class="col-md-5 info-left text-left">
+					<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 6 ); } ?>
 				</div>
-				<div class="col-md-6 info-right text-left">
+				<div class="col-md-6 col-md-offset-1 info-right text-left">
 					<p>
 						<strong>Endereço</strong>
 						<br>Avenida Beira Mar, 5.575
