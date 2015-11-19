@@ -80,34 +80,36 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   background-color: #fff40e;
   color: #4e67cf;
   padding: 5px 25px;
+  border: 0;
 }
-/* line 82, style.scss */
+/* line 83, style.scss */
 #page .btn-receba:hover {
   background-color: #fff86e;
 }
-/* line 85, style.scss */
+/* line 86, style.scss */
 #page .input-receba-wrap {
   margin-bottom: 5px;
   color: #606060;
 }
-/* line 89, style.scss */
+/* line 90, style.scss */
 #page .input-receba {
   border: 0;
   padding: 5px;
 }
-/* line 94, style.scss */
+/* line 95, style.scss */
 #page .input-contato {
   border: 0;
   padding: 5px;
   background-color: #f4f4f4;
 }
-/* line 100, style.scss */
+/* line 101, style.scss */
 #page .btn-contato {
   background-color: #4e67cf;
   padding: 5px 25px;
   color: white;
+  border: 0;
 }
-/* line 106, style.scss */
+/* line 108, style.scss */
 #page .btn-contato:hover {
   background-color: #8394dd;
 }
@@ -178,6 +180,51 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /* line 58, _header.scss */
 #page #header .container nav#site-navigation div.wrap-header ul#menu-header li:last-child {
   margin-right: 0;
+}
+/* line 63, _header.scss */
+#page #header .container nav#site-navigation div.wrap-header .botao-menu-responsivo {
+  float: left;
+  margin-right: 20px;
+  margin-top: 12px;
+}
+/* line 69, _header.scss */
+#page #header .container nav#site-navigation div.wrap-header .botao-menu-responsivo .dropdown-menu li {
+  width: 100%;
+}
+/* line 71, _header.scss */
+#page #header .container nav#site-navigation div.wrap-header .botao-menu-responsivo .dropdown-menu li a {
+  width: 100%;
+  color: #606060;
+  padding: 15px;
+}
+/* line 76, _header.scss */
+#page #header .container nav#site-navigation div.wrap-header .botao-menu-responsivo .dropdown-menu li a:hover {
+  background-color: #f0f2f4;
+}
+/* line 79, _header.scss */
+#page #header .container nav#site-navigation div.wrap-header .botao-menu-responsivo .dropdown-menu li a.ativob {
+  background-color: #f0f2f4;
+}
+@media (max-width: 991px) {
+  /* line 97, _header.scss */
+  #page #header .container nav#site-navigation div.wrap-header .botao-menu-responsivo {
+    display: inline-block;
+    padding-top: 5px;
+  }
+  /* line 101, _header.scss */
+  #page #header .container nav#site-navigation div.wrap-header ul#menu-header {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  /* line 116, _header.scss */
+  #page #header .container nav#site-navigation div.wrap-header .botao-menu-responsivo {
+    display: none;
+  }
+  /* line 119, _header.scss */
+  #page #header .container nav#site-navigation div.wrap-header ul#menu-header {
+    display: inline-block;
+  }
 }
 /* line 2, _content.scss */
 #page div#content div.nav-buttons {
@@ -370,18 +417,18 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   color: #bfbfbf;
 }
 
-/* line 117, style.scss */
+/* line 119, style.scss */
 #ui-datepicker-div {
   z-index: 100 !important;
 }
 
-/* line 121, style.scss */
+/* line 123, style.scss */
 .effect-gray:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-/* line 126, style.scss */
+/* line 128, style.scss */
 .effect-bright:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);

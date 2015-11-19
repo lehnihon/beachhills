@@ -59,6 +59,30 @@
          				margin-right: 0;
          			}
          		}
+
+	            .botao-menu-responsivo{
+	                float:left;
+	                margin-right: 20px;
+	                margin-top: 12px;
+
+	                .dropdown-menu{
+	                    li{
+	                        width: 100%;
+	                        a{
+	                            width: 100%;
+	                            color:#606060;
+	                            padding:15px;
+	                        }
+	                        a:hover{
+	                            background-color:#f0f2f4;
+	                        }
+	                        a.ativob{
+	                             background-color:#f0f2f4;
+	                        }
+	                    }
+	                }
+	            }
+
          	}
 
         }
@@ -66,9 +90,38 @@
 }
 
 @media (max-width: 991px) {  
+	#header{
+	    .container{   
+	        nav#site-navigation{
+	         	div.wrap-header{
+		            .botao-menu-responsivo{
+		            	display: inline-block;
+		            	padding-top: 5px;
+		            }
+					ul#menu-header{
+						display: none;
+					}
+	         	}
 
+	        }
+	    }    
+	}    
 }
 
 @media (min-width: 992px) {  
-  
+	#header{
+	    .container{   
+	        nav#site-navigation{
+	         	div.wrap-header{
+		            .botao-menu-responsivo{
+		            	display: none;
+		            }
+					ul#menu-header{
+						display: inline-block;
+					}
+	         	}
+
+	        }
+	    }    
+	}     
 }

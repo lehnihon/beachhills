@@ -50,7 +50,18 @@
 						<li><a href="<?php echo esc_url( home_url( '/' ))."localizacao/"; ?>">Localização</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/' ))."contato/"; ?>">Contato</a></li>
 					</ul>
-
+					<div class="btn-group botao-menu-responsivo">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="<?php echo esc_url( home_url( '/' ))."hotel/"; ?>">O Hotel</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ))."acomodacoes/"; ?>">Acomodações</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ))."fotos/"; ?>">Galeria de Fotos</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ))."localizacao/"; ?>">Localização</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ))."contato/"; ?>">Contato</a></li>
+						</ul>
+					</div>
 				</div>
 			</nav><!-- #site-navigation -->
 		</div><!-- .container -->
