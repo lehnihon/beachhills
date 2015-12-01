@@ -95,7 +95,7 @@ get_header(); ?>
 						<h1>HOTEL<br> BEACH HILLS</h1><br>
 						<h5>O Hotel Beach Hills fica localizado na cidade de Porto Seguro, na Bahia</h5><br>
 						<p>O Beach Hills conta com 180 apartamentos e fica em frente á praia da Taperapuan, em Porto Seguro.</p>
-						<p>Próximo às principais baracas das praias mais badaladas da cidade, você com certeza terá uma ótima hospedagem.</p>
+						<p>Próximo às principais barracas das praias mais badaladas da cidade, você com certeza terá uma ótima hospedagem.</p>
 						<p>Pela manhã, um saboroso café da manhã lhe recepciona com alimentos frescos e variados, proporcionando um começo de dia ainda melhor.</p>
 					</div>
 				</div>
