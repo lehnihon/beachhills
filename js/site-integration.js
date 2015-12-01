@@ -28,8 +28,8 @@
 
 			if(dtEntrada == '' || dtSaida == ''){
 				alert('Favor selecionar a data');
-			}else if(dtEntradaFormat > dtSaidaFormat){
-				alert('A data de entrada deve ser menor que a data de saída');
+			}else if(dtEntradaFormat >= dtSaidaFormat){
+				alert('A data de de saída deve ser maior que a data de entrada');
 			}else{
 				window.location = 'http://hotelbeachhills.com.br/b2c/hotel?hotel=776&partida=' +dtEntrada.split('/').join('')+'&retorno='+dtSaida.split('/').join('');				
 			}
