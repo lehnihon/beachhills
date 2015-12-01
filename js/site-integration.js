@@ -1,6 +1,9 @@
 ( function( $ ) {
 	$(function() {
-		$('#idDtEntrada').datepicker({ minDate: 0, dateFormat: 'dd/mm/yy',   dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
+		var tomorrow = new Date();
+		tomorrow.setDate(tomorrow.getDate() + 2);
+		
+		$('#idDtEntrada').datepicker({ minDate: tomorrow, dateFormat: 'dd/mm/yy',   dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
 		    dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
 		    dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
 		    monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
@@ -8,7 +11,7 @@
 		    nextText: 'Próximo',
 		    prevText: 'Anterior' });
 		$('#idDtEntrada').mask("99/99/9999");
-		$('#idDtSaida').datepicker({ minDate: 0, dateFormat: 'dd/mm/yy',   dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
+		$('#idDtSaida').datepicker({ minDate: tomorrow, dateFormat: 'dd/mm/yy',   dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
 		    dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
 		    dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
 		    monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
